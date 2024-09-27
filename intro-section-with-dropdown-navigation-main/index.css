@@ -1,0 +1,70 @@
+header{
+    display: flex;
+    padding: 10px 30px;
+    gap: 18px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+header nav:last-child{
+    margin-left: auto;
+}
+header nav{
+    position: relative;
+    display: flex;
+}
+header nav a{
+    padding-bottom: 20px;
+}
+header ul{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding-right: 20px;
+    padding-top: 16px;
+}
+/* Assginment - Create a dropdown menu with html and css */
+/* Add animations to the dropdown */
+header ul:nth-child(4){
+    left: 30%;
+}
+
+ nav a:hover+ul{
+    display: flex;
+ }
+ ul:hover{
+    display: flex;
+ }
+
+#hero{
+    display: flex;
+    gap: 20px;
+    padding: 15px 50px;
+    align-items: end;
+}
+#hero > div{
+    flex: 1;
+}
+.section-image img{
+    width: 100%;
+}
+.section-text > *{
+    margin-top: 50px;
+    display: block;
+}
+h1{
+    font-size: 80px;
+}
+.section-text > a{
+    background-color: black;
+    color: white;
+    width: max-content;
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 6px;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText android:id="@+id/fullName" android:hint="Full Name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/phoneNumber" android:hint="Phone Number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/idNumber" android:hint="ID Number" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone"/>
+    <EditText android:id="@+id/driversLicense" android:hint="Driver's License" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone"/>
+    <ImageView android:id="@+id/vehicleRegDocs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_upload"/>
+    <ImageView android:id="@+id/photoUpload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_upload"/>
+    <EditText android:id="@+id/password" android:hint="Password" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword"/>
+    <EditText android:id="@+id/confirmPassword" android:hint="Confirm Password" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword"/>
+
+    <RadioGroup android:id="@+id/userTypeGroup" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/customerOption" android:text="Customer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/driverOption" android:text="Driver" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <CheckBox android:id="@+id/showPasswordToggle" android:text="Show Password" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/registerButton" android:text="Register" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
